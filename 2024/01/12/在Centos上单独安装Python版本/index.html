@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://www.rlya.site/2023/02/22/腾讯推出linux-qq-3-1-0测试版-已具有部分功能/"/>
+  <link rel="canonical" href="http://www.rlya.site/2024/01/12/在centos上单独安装python版本/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -31,21 +31,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>腾讯推出Linux QQ 3.1.0测试版 已具有部分功能 - Sakura'Road 樱道</title>
-  <meta name="keywords" content="Miscellaneous,博客 Blog">
+  <title>在Centos上单独安装Python版本 - Sakura'Road 樱道</title>
+  <meta name="keywords" content="Python,博客 Blog">
   <meta desc name="description" content="Just - Ruoli - Sakura'Road 樱道">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="腾讯推出Linux QQ 3.1.0测试版 已具有部分功能">
-<meta property="og:url" content="http://www.rlya.site/2023/02/22/%E8%85%BE%E8%AE%AF%E6%8E%A8%E5%87%BALinux-QQ-3-1-0%E6%B5%8B%E8%AF%95%E7%89%88-%E5%B7%B2%E5%85%B7%E6%9C%89%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD/index.html">
+<meta property="og:title" content="在Centos上单独安装Python版本">
+<meta property="og:url" content="http://www.rlya.site/2024/01/12/%E5%9C%A8Centos%E4%B8%8A%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85Python%E7%89%88%E6%9C%AC/index.html">
 <meta property="og:site_name" content="Sakura&#39;Road 樱道">
-<meta property="og:description" content="早在去年 腾讯就发布了Linux QQ的测试版本不过当时可能发布得稍微有一点着急 功能并不齐全但是在新发布的Linux QQ 3.1.0中已经具有了较多功能 但唯一比较遗憾的是项目仍处于测试阶段现在无法从Linux QQ官网进行下载    更新功能   支持多账号登录和管理 支持截图快捷键 新增好友管理器 支持调整字体大小 支持缩小最近会话列表的宽度 表情面板新增最近使用模块 QQ 群支持全员禁言">
+<meta property="og:description" content="事件背景在服务器上部署环境时，遇到安装软件而 pip 无法获取到对应软件的问题，于是查阅软件文档得知，软件需要 Python3.8 - 3.11 而服务器自带 Python3.6 于是需要自己手动进行更新。   安装过程1.安装依赖包   yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqli">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-02-22T13:01:47.000Z">
-<meta property="article:modified_time" content="2023-11-24T01:09:00.466Z">
+<meta property="article:published_time" content="2024-01-12T09:22:38.000Z">
+<meta property="article:modified_time" content="2024-01-12T09:32:44.656Z">
 <meta property="article:author" content="Ruoli">
-<meta property="article:tag" content="Miscellaneous">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2501,7 +2501,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://www.rlya.site/2023/02/22/腾讯推出Linux-QQ-3-1-0测试版-已具有部分功能/">
+  <link itemprop="mainEntityOfPage" href="http://www.rlya.site/2024/01/12/在Centos上单独安装Python版本/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Sakura'Road 樱道">
   </span>
@@ -2522,7 +2522,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        腾讯推出Linux QQ 3.1.0测试版 已具有部分功能
+        在Centos上单独安装Python版本
       </h1>
       <div class='new-meta-box'>
         
@@ -2543,10 +2543,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-02-22T21:01:47+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-01-12T17:22:38+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年2月22日</p>
+    <p>发布于：2024年1月12日</p>
   </a>
 </div>
 
@@ -2569,33 +2569,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p><strong>早在去年 腾讯就发布了Linux QQ的测试版本不过当时可能发布得稍微有一点着急 功能并不齐全</strong><br><strong>但是在新发布的Linux QQ 3.1.0中已经具有了较多功能 但唯一比较遗憾的是项目仍处于测试阶段现在无法从Linux QQ官网进行下载</strong>  </p>
+    <h3 id="事件背景"><a href="#事件背景" class="headerlink" title="事件背景"></a>事件背景</h3><p>在服务器上部署环境时，遇到安装软件而 <code>pip</code> 无法获取到对应软件的问题，于是查阅软件文档得知，软件需要 <code>Python3.8 - 3.11</code> 而服务器自带 <code>Python3.6</code> 于是需要自己手动进行更新。  </p>
+<h3 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h3><p>1.安装依赖包  </p>
+<p><code>yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel</code>  </p>
+<p>2.下载Python安装包  </p>
+<p><code>wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz</code><br>（具体链接请根据实际情况到官网查看）<br>3.解压资源包并进入目录  </p>
+<p><code>tar -zxvf Python-3.8.0.tgz</code><br><code>cd Python-3.8.0</code>   </p>
+<p>4.编译安装  </p>
+<p><code>./configure --enable-optimizations</code><br><code>make altinstall</code>  </p>
 <ul>
-<li>更新功能</li>
+<li>此处提一下<code>make altinstall</code> 与 <code>make install</code>的区别：</li>
+<li><code>altinstall</code>不会创建软连接与手册相关信息</li>
 </ul>
-<ol>
-<li>支持多账号登录和管理</li>
-<li>支持截图快捷键</li>
-<li>新增好友管理器</li>
-<li>支持调整字体大小</li>
-<li>支持缩小最近会话列表的宽度</li>
-<li>表情面板新增最近使用模块</li>
-<li>QQ 群支持全员禁言和禁言单个群友</li>
-<li>转发面板支持转发对象详情</li>
-<li>转发支持带上内容详情并可以点击查看</li>
-</ol>
-<ul>
-<li>下载地址<br>请根据自己使用的系统和架构选择对应版本的安装包。</li>
-</ul>
-<ol>
-<li><a target="_blank" rel="noopener" href="https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_aarch64.rpm">https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_aarch64.rpm</a></li>
-<li><a target="_blank" rel="noopener" href="https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_amd64.deb">https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_amd64.deb</a></li>
-<li><a target="_blank" rel="noopener" href="https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_arm64.AppImage">https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_arm64.AppImage</a></li>
-<li><a target="_blank" rel="noopener" href="https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_arm64.deb">https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_arm64.deb</a></li>
-<li><a target="_blank" rel="noopener" href="https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_loong64.deb">https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_loong64.deb</a></li>
-<li><a target="_blank" rel="noopener" href="https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_x86_64.AppImage">https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_x86_64.AppImage</a></li>
-<li><a target="_blank" rel="noopener" href="https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_x86_64.rpm">https://dldir1.qq.com/qqfile/qq/QQNT/c6032ac7/linuxqq_3.1.0-9332_x86_64.rpm</a><br><strong>以上内容转载自<a target="_blank" rel="noopener" href="https://www.landiannews.com/download/97438.html">蓝点网</a></strong></li>
-</ol>
+<p>5.修改默认Python  </p>
+<p><code>ln -sf /usr/local/bin/python3.11 /usr/bin/python3</code></p>
+<p>6.查看是否成功</p>
+<p><code>python3 --version</code></p>
 
   </div>
   
@@ -2620,10 +2609,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-24T09:09:00+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-01-12T17:32:44+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年11月24日</p>
+    <p>更新于：2024年1月12日</p>
   </a>
 </div>
 
@@ -2632,8 +2621,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Miscellaneous/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Miscellaneous</p></a></div>
-  <span hidden itemprop="keywords">Miscellaneous</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Python/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Python</p></a></div>
+  <span hidden itemprop="keywords">Python</span>
 
 
         
@@ -2646,7 +2635,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.rlya.site/2023/02/22/%E8%85%BE%E8%AE%AF%E6%8E%A8%E5%87%BALinux-QQ-3-1-0%E6%B5%8B%E8%AF%95%E7%89%88-%E5%B7%B2%E5%85%B7%E6%9C%89%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD/&title=腾讯推出Linux QQ 3.1.0测试版 已具有部分功能 - Sakura'Road 樱道&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.rlya.site/2024/01/12/%E5%9C%A8Centos%E4%B8%8A%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85Python%E7%89%88%E6%9C%AC/&title=在Centos上单独安装Python版本 - Sakura'Road 樱道&summary="
           
           >
           
@@ -2658,7 +2647,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.rlya.site/2023/02/22/%E8%85%BE%E8%AE%AF%E6%8E%A8%E5%87%BALinux-QQ-3-1-0%E6%B5%8B%E8%AF%95%E7%89%88-%E5%B7%B2%E5%85%B7%E6%9C%89%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD/&title=腾讯推出Linux QQ 3.1.0测试版 已具有部分功能 - Sakura'Road 樱道&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.rlya.site/2024/01/12/%E5%9C%A8Centos%E4%B8%8A%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85Python%E7%89%88%E6%9C%AC/&title=在Centos上单独安装Python版本 - Sakura'Road 樱道&summary="
           
           >
           
@@ -2670,7 +2659,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.rlya.site/2023/02/22/%E8%85%BE%E8%AE%AF%E6%8E%A8%E5%87%BALinux-QQ-3-1-0%E6%B5%8B%E8%AF%95%E7%89%88-%E5%B7%B2%E5%85%B7%E6%9C%89%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD/&title=腾讯推出Linux QQ 3.1.0测试版 已具有部分功能 - Sakura'Road 樱道&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.rlya.site/2024/01/12/%E5%9C%A8Centos%E4%B8%8A%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85Python%E7%89%88%E6%9C%AC/&title=在Centos上单独安装Python版本 - Sakura'Road 樱道&summary="
           
           >
           
@@ -2703,16 +2692,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/02/22/%E8%AE%BA%E8%A7%A3%E5%AF%86%E5%8A%A0%E5%AF%86%E9%9F%B3%E4%B9%90%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>论解密加密音乐文件方法</p>
-          <p class='content'>
-前言在国内的音乐平台上下载VIP音乐基本都是需要开通会员 且下载之后的文件格式将会是加密的，例如某易的ncm Q某的qmc等 都需要在自家的音乐播放器当中开通会员才能够听 但是没有什么东西可以...</p>
-        </a>
       
-      
-        <a class='next' href='/2023/02/20/%E7%BA%AFIPV6%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BF%E9%97%AEIPV4%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/'>
-          <p class='title'>纯IPV6服务器访问IPV4的解决方法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>事件背景在经过多次选择之后确定购买了JustHost的一个便宜VPS购买的时候并没有注意 到了ssh连接的时候发现 该VPS只有一个IPV6地址原本我以为并没有什么影响 直到我使用Putty进行...</p>
+        <a class='next' href='/2023/11/24/%E3%80%8AYOLOv8%E3%80%8B%E5%B0%86VOC%E6%A0%BC%E5%BC%8F%E6%95%B0%E6%8D%AE%E9%9B%86%E8%BD%AC%E4%B8%BAYOLO%E6%A0%BC%E5%BC%8F%E6%95%B0%E6%8D%AE%E9%9B%86%E5%B7%A5%E5%85%B7/'>
+          <p class='title'>《YOLOv8》将VOC格式数据集转为YOLO格式数据集工具<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>事件背景在YOLOv8学习过程中 找到了IP102数据集 但是发现数据集为VOC格式 需要自己转换为YOLO格式，一万多张图片，肯定是不可能用手一张一张转的，所以使用了Python来编写一个小程...</p>
         </a>
       
     </div>
@@ -2728,7 +2711,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/02/22/%E8%85%BE%E8%AE%AF%E6%8E%A8%E5%87%BALinux-QQ-3-1-0%E6%B5%8B%E8%AF%95%E7%89%88-%E5%B7%B2%E5%85%B7%E6%9C%89%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/01/12/%E5%9C%A8Centos%E4%B8%8A%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85Python%E7%89%88%E6%9C%AC/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2760,9 +2743,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E8%83%8C%E6%99%AF"><span class="toc-text">事件背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B"><span class="toc-text">安装过程</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3330,7 +3323,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Sakura'Road 樱道","url":"http://www.rlya.site/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Ruoli","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.rlya.site/","sameAs":["https://github.com/volantis-x"],"description":"Just"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://www.rlya.site/","name":"Sakura'Road 樱道"}},{"@type":"ListItem","position":3,"item":{"@id":"http://www.rlya.site/2023/02/22/腾讯推出Linux-QQ-3-1-0测试版-已具有部分功能/","name":"腾讯推出Linux QQ 3.1.0测试版 已具有部分功能"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Sakura'Road 樱道","url":"http://www.rlya.site/","keywords":"博客 Blog","description":"Just","author":{"@type":"Person","name":"Ruoli","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.rlya.site/","description":"Just"},"publisher":{"@type":"Organization","name":"Sakura'Road 樱道","url":"http://www.rlya.site/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://www.rlya.site?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"腾讯推出Linux QQ 3.1.0测试版 已具有部分功能","description":"Just","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.rlya.site/2023/02/22/%E8%85%BE%E8%AE%AF%E6%8E%A8%E5%87%BALinux-QQ-3-1-0%E6%B5%8B%E8%AF%95%E7%89%88-%E5%B7%B2%E5%85%B7%E6%9C%89%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD/"},"author":{"@type":"Person","name":"Ruoli","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.rlya.site/"},"publisher":{"@type":"Organization","name":"Sakura'Road 樱道","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://www.rlya.site/2023/02/22/%E8%85%BE%E8%AE%AF%E6%8E%A8%E5%87%BALinux-QQ-3-1-0%E6%B5%8B%E8%AF%95%E7%89%88-%E5%B7%B2%E5%85%B7%E6%9C%89%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD/","wordCount":0,"datePublished":"2023-02-22T13:01:47.000Z","dateModified":"2023-11-24T01:09:00.466Z","keywords":"Miscellaneous","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Sakura'Road 樱道","url":"http://www.rlya.site/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Ruoli","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.rlya.site/","sameAs":["https://github.com/volantis-x"],"description":"Just"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://www.rlya.site/","name":"Sakura'Road 樱道"}},{"@type":"ListItem","position":3,"item":{"@id":"http://www.rlya.site/2024/01/12/在Centos上单独安装Python版本/","name":"在Centos上单独安装Python版本"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Sakura'Road 樱道","url":"http://www.rlya.site/","keywords":"博客 Blog","description":"Just","author":{"@type":"Person","name":"Ruoli","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.rlya.site/","description":"Just"},"publisher":{"@type":"Organization","name":"Sakura'Road 樱道","url":"http://www.rlya.site/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://www.rlya.site?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"在Centos上单独安装Python版本","description":"Just","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.rlya.site/2024/01/12/%E5%9C%A8Centos%E4%B8%8A%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85Python%E7%89%88%E6%9C%AC/"},"author":{"@type":"Person","name":"Ruoli","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://www.rlya.site/"},"publisher":{"@type":"Organization","name":"Sakura'Road 樱道","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://www.rlya.site/2024/01/12/%E5%9C%A8Centos%E4%B8%8A%E5%8D%95%E7%8B%AC%E5%AE%89%E8%A3%85Python%E7%89%88%E6%9C%AC/","wordCount":0,"datePublished":"2024-01-12T09:22:38.000Z","dateModified":"2024-01-12T09:32:44.656Z","keywords":"Python","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
